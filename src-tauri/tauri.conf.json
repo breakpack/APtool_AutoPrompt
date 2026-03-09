@@ -1,0 +1,55 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Prompt Autocomplete",
+  "version": "0.1.0",
+  "identifier": "com.autoprompt.app",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "macOSPrivateApi": true,
+    "windows": [
+      {
+        "label": "main",
+        "title": "Prompt Autocomplete",
+        "width": 860,
+        "height": 560,
+        "visible": false,
+        "transparent": true,
+        "backgroundColor": "#00000000",
+        "alwaysOnTop": true,
+        "shadow": false,
+        "resizable": true,
+        "center": true,
+        "decorations": false,
+        "skipTaskbar": true
+      },
+      {
+        "label": "bubble",
+        "title": "Prompt Bubble",
+        "width": 72,
+        "height": 72,
+        "visible": false,
+        "transparent": true,
+        "backgroundColor": "#00000000",
+        "alwaysOnTop": true,
+        "shadow": false,
+        "resizable": false,
+        "center": false,
+        "decorations": false,
+        "skipTaskbar": true,
+        "focus": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all"
+  }
+}
