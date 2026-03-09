@@ -2,6 +2,11 @@
 
 MVP standalone desktop app for Windows-first global prompt autocomplete.
 
+## Disclaimer
+- This project was created and modified with Codex assistance.
+- Code quality and security are not guaranteed.
+- Review, test, and audit the code before production use.
+
 ## Features
 - `Ctrl+Space` global hotkey toggles the palette window.
 - Ghost text inline completion + 2 alternatives (`rewrite`, `variant`).
